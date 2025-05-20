@@ -26,10 +26,10 @@ export default function Navbar(){
         },
     ];
     return(
-        <nav className="fixed top-0 left-0 right-0 z-50  shadow py-6 h-20 bg-opacity-10 border-b-2 border-blue-500 backdrop-blur-md">
+        <nav className="fixed top-0 left-0 right-0 z-50  shadow py-6 h-20 bg-opacity-0 border-b-2 border-blue-300 backdrop-blur-md">
             <div className="flex justify-between w-full items-center">
                 <div className="flex items-center">
-                    <h2 className="ml-5 text-2xl items-center font-bold text-black text-right ">
+                    <h2 className="ml-5 text-2xl items-center font-bold text-white text-right ">
                     Ishaan Sharma 
                     </h2>
                     <div className="flex ">
@@ -39,7 +39,7 @@ export default function Navbar(){
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`items-center ml-2 md:ml-4 text-2xl font-bold text-blue-500 hover:text-black transition-colors duration-200`}
+                            className={`items-center ml-2 md:ml-4 text-2xl font-bold text-gray-500 hover:text-blue-500 transition-colors duration-200`}
                             aria-label={label}
                         >
                             {icon}

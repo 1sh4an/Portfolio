@@ -1,12 +1,17 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Hi from './assets/snape.jpg'
-
+import Navbar from './components/common/navbar'
+import Header from './components/Home-Page/header'
+import { ThemeProvider } from './components/theme-provider'
 function App() {
   return (
-   <div>
-    <Navbar/>
-   </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <div>
+          <Navbar/>
+          <Header/>
+        </div>
+    </ThemeProvider>
+    
+   
   )
 }
 
