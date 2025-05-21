@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Header() {
   return (
-      <div className="relative h-[750px] w-full mt-20 flex items-center">
+      <div className="relative h-[95vh] w-full mt-20 flex items-center">
         <BackgroundBeams />
         <div className="z-10 flex flex-col text-left">
           <h1 className="text-7xl text-white font-bold">
@@ -24,7 +24,8 @@ export default function Header() {
             competitive programming, problem-solving, and technology, always eager to learn,
             innovate, and tackle new challenges in the field.
           </p>
-          <Button className="mt-6 w-[150px] hover:!bg-blue-400 transition-colors duration-200">
+          <Button className="mt-6 w-[150px] hover:!bg-blue-400 transition-colors duration-200"
+          onClick={()=>window.location.href=("mailto:ishaansharma.is2004@gmail.com")}>
             Contact Me
           </Button>
         </div>

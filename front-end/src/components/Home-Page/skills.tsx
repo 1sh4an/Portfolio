@@ -35,7 +35,7 @@ export default function Skills() {
         <div className="flex-1 h-[2px] bg-white/50 ml-2 w-full"></div>
       </div>
       
-      <div className="flex flex-col w-full items-center py-5 space-y-4 h-auto justify-center">
+      <div className="flex flex-col w-full items-center py-5 space-y-4 h-auto justify-center m-7">
         {skillsData.map((skill, index) => (
           <SkillItem 
             key={index} 
