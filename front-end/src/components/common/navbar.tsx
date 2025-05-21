@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaCode } from "react-icons/fa"
+import { SiLeetcode } from 'react-icons/si';
 export default function Navbar(){
     const socialLinks = [
         {
@@ -15,9 +16,9 @@ export default function Navbar(){
           label: "GitHub",
         },
         {
-          href: "https://instagram.com/your-instagram",
-          icon: <FaInstagram />,
-          label: "Instagram",
+          href: "https://leetcode.com/u/1sh4an/",
+          icon: <SiLeetcode />,
+          label: "Leetcode",
         },
         {
           href: "https://linkedin.com/in/your-linkedin",
@@ -48,13 +49,13 @@ export default function Navbar(){
                     </div>
                 </div>
                 <div className="items-center flex space-x-6 ">
-                    <h2 className="text-2xl  hover:-translate-y-2 transition-all hover:text-teal-900">
+                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
                         Home
                     </h2>
-                    <h2 className="text-2xl  hover:-translate-y-2 transition-all hover:text-teal-900">
+                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
                         About
                     </h2>
-                    <h2 className="text-2xl  hover:-translate-y-2 transition-all hover:text-teal-900 mr-5">
+                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
                         Projects
                     </h2>
                 </div>
