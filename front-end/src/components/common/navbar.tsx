@@ -1,8 +1,8 @@
 import { FaGithub } from "react-icons/fa"
-import { FaInstagram } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaCode } from "react-icons/fa"
 import { SiLeetcode } from 'react-icons/si';
+import { Link } from "react-router-dom";
 export default function Navbar(){
     const socialLinks = [
         {
@@ -49,15 +49,22 @@ export default function Navbar(){
                     </div>
                 </div>
                 <div className="items-center flex space-x-6 ">
+                    <Link to={"/"}>
                     <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
                         Home
-                    </h2>
+                        </h2>
+                    </Link>
+                        
+                    
                     <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
-                        About
+                    About
                     </h2>
-                    <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
+                    <Link to={"/Projects"}>
+                        <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
                         Projects
-                    </h2>
+                        </h2>
+                    </Link>
+                    
                 </div>
             </div>
 

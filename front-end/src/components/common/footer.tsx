@@ -1,5 +1,6 @@
-import { FaMailBulk } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { FaGithub} from "react-icons/fa";
+
 
 export default function Footer(){
     const BlueDot = <span className="text-blue-400 font-bold text-5xl">.</span>;
@@ -13,7 +14,7 @@ export default function Footer(){
                         Learning as I go, always open to feedback.
                     </h1>
                     <div className="group flex flex-row items-center h-4 m-2">
-                        <FaMailBulk className="w-5 h-5 group-hover:text-blue-400 transition-all duration-300" />
+                        <FaEnvelope className="w-5 h-5 group-hover:text-blue-400 transition-all duration-300" />
                         <h1 className="ml-2 text-l group-hover:text-blue-400 transition-all duration-300 cursor-pointer"
                         onClick={()=>window.location.href=("mailto:ishaansharma.is2004@gmail.com")}>
                         ishaansharma.is2004@gmail.com

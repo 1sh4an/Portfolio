@@ -1,21 +1,18 @@
-import Footer from './components/common/footer'
-import Navbar from './components/common/navbar'
-import Header from './components/Home-Page/header'
+
 import { ThemeProvider } from './components/theme-provider'
-import Experience from './components/Home-Page/experience'
-import Skills from './components/Home-Page/skills'
-import { TracingBeam } from './components/ui/tracing-beam'
+import Home from './Pages/home_page'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Projects from './Pages/projects';
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <TracingBeam>
-        <Navbar/>
-        <Header/>  
-        <Skills/>
-        <Experience/>
-      </TracingBeam>
-      <Footer/>
+      <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/Projects" element={<Projects/>}/>
+              </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }
