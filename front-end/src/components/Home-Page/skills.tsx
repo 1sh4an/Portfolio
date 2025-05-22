@@ -18,7 +18,7 @@ const SkillItem = ({ name, proficiency }:{name:string,proficiency: number}) => (
     </h1>
     <div className="bar w-full h-1 bg-white/30 rounded-full overflow-hidden group-hover:h-3 transition-all duration-300">
       <div
-        className="bar h-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 rounded-full"
+        className="bar h-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 rounded-full "
         style={{ width: `${proficiency}%` }}
       ></div>
     </div>

@@ -49,13 +49,13 @@ export default function Navbar(){
                     </div>
                 </div>
                 <div className="items-center flex space-x-6 ">
-                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
+                    <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
                         Home
                     </h2>
-                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
+                    <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
                         About
                     </h2>
-                    <h2 className="text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
+                    <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
                         Projects
                     </h2>
                 </div>

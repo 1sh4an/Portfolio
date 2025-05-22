@@ -1,4 +1,4 @@
-
+import Footer from './components/common/footer'
 import Navbar from './components/common/navbar'
 import Header from './components/Home-Page/header'
 import { ThemeProvider } from './components/theme-provider'
@@ -15,7 +15,7 @@ function App() {
         <Skills/>
         <Experience/>
       </TracingBeam>
-   
+      <Footer/>
     </ThemeProvider>
   )
 }
