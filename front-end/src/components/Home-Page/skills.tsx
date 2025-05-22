@@ -3,12 +3,18 @@ import { FaDotCircle } from "react-icons/fa";
 const skillsData = [
   { name: "C++", proficiency: 90 },
   { name: "JavaScript", proficiency: 50 },
-  { name: "React", proficiency:60 },
+  { name: "React", proficiency: 60 },
   { name: "Python", proficiency: 75 },
   { name: "Tailwind", proficiency: 66 },
 ];
 
-const SkillItem = ({ name, proficiency }:{name:string,proficiency: number}) => (
+const SkillItem = ({
+  name,
+  proficiency,
+}: {
+  name: string;
+  proficiency: number;
+}) => (
   <div className="flex flex-row w-full items-center h-16 space-x-3 group relative cursor-pointer">
     <div className="ml-7 transition-all duration-300 flex items-center">
       <FaDotCircle className="w-2 h-2 text-blue-400 group-hover:w-3 group-hover:h-3 transition-all duration-300" />
@@ -34,13 +40,13 @@ export default function Skills() {
         </h1>
         <div className="flex-1 h-[2px] bg-white/50 ml-2 w-full"></div>
       </div>
-      
+
       <div className="flex flex-col w-full items-center py-5 space-y-4 h-auto justify-center m-7">
         {skillsData.map((skill, index) => (
-          <SkillItem 
-            key={index} 
-            name={skill.name} 
-            proficiency={skill.proficiency} 
+          <SkillItem
+            key={index}
+            name={skill.name}
+            proficiency={skill.proficiency}
           />
         ))}
       </div>

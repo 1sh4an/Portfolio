@@ -1,6 +1,6 @@
-
-import Navbar from '../components/common/navbar'
+import Navbar from "../components/common/navbar";
 import { HoverEffect } from "../components/ui/card-hover-effect";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -9,14 +9,13 @@ const projects = [
       "A technology company that builds economic infrastructure for the internet.",
     link: "https://stripe.com",
     githubLink: "https://github.com/1sh4an/TranSpot",
-    dates: "May 2025- June 2025"
+    dates: "May 2025- June 2025",
   },
   {
     title: "Netflix",
     description:
       "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
     link: "https://netflix.com",
-    
   },
   {
     title: "Google",
@@ -45,15 +44,22 @@ const projects = [
 ];
 function Projects() {
   return (
-   <div>
     <div>
-      <Navbar/>
+      <div>
+        <Navbar />
+      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.3 }}
+      >
+        <div className="w-full mx-auto  mt-20">
+          <HoverEffect items={projects} />
+        </div>
+      </motion.div>
     </div>
-      <div className="w-full mx-auto  mt-20">
-      <HoverEffect items={projects} />
-    </div>
-   </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

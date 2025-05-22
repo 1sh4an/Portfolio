@@ -7,12 +7,12 @@ export const WobbleCard = ({
   children,
   containerClassName,
   className,
-  imageSrc, 
+  imageSrc,
 }: {
   children: React.ReactNode;
   containerClassName?: string;
   className?: string;
-  imageSrc?: string; 
+  imageSrc?: string;
 }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -60,7 +60,6 @@ export const WobbleCard = ({
           }}
           className={cn("h-full px-4 py-20 sm:px-10 relative", className)}
         >
-          
           {imageSrc && (
             <img
               src={imageSrc}
@@ -68,7 +67,7 @@ export const WobbleCard = ({
               className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
             />
           )}
-          
+
           <Noise />
           <div className="relative z-20">{children}</div>
         </motion.div>
