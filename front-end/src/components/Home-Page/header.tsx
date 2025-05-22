@@ -6,20 +6,19 @@ export default function Header() {
       <div className="relative h-[95vh] w-full mt-20 flex items-center">
         <BackgroundBeams />
         <div className="z-10 flex flex-col text-left">
-          <h1 className="text-7xl text-white font-bold">
-            Hi,
+          <h1 className="text-7xl text-white ">
+            Hello, I am
           </h1>
-          <h1 className="text-7xl text-white font-bold mt-2">
-            I'm
-            <span className="text-blue-400 font-bold text-8xl ml-4">Ishaan</span>
+          <h1 className="text-7xl text-white font-bold mt-4">
+            <span className="text-blue-400 font-bold text-8xl">Ishaan Sharma</span>
           </h1>
           <h1 className="text-5xl text-white font-bold mt-4">
           <span className="text-blue-400 font-bold text-5xl">Student</span>
             {" "}at
-            <span className="text-blue-400 font-bold text-5xl ml-4">IIT Ropar</span>
+            <span className="text-blue-400 font-bold text-5xl"> IIT Ropar</span>
           </h1>
           <p className="text-xl text-white mt-8 w-[700px]">
-            I am a 4th-year Electrical Engineering undergraduate passionate about
+            A final year Electrical Engineering undergraduate passionate about
             competitive programming, problem-solving, and technology, always eager to learn,
             innovate, and tackle new challenges in the field.
           </p>

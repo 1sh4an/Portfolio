@@ -100,7 +100,7 @@ export const CardTitle = ({
         <h4 className={cn("text-blue-400 font-bold tracking-wide items-center", className)}>
           {children}
         </h4>
-        {
+        {githubLink&&(
           <a
             href={githubLink}
             target="_blank"
@@ -110,10 +110,14 @@ export const CardTitle = ({
           >
             <FaGithub />
           </a>
-        }
+        )}
       </div>
         <div className="text-left">
-          <h2 className="text-xs">{dates}</h2>
+          {
+            dates&&(
+              <h2 className="text-xs">{dates}</h2>
+            )
+          }
         </div>
     </div>
   );
