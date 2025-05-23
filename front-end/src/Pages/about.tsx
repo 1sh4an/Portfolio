@@ -20,7 +20,7 @@ export default function About() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1.3 }}
+        transition={{ duration: 1 }}
       >
         <div className="flex-flex-col">
           <div className="flex flex-row h-auto mt-[15vh]">

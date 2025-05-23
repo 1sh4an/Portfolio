@@ -62,10 +62,19 @@ export default function Navbar() {
           </Link>
 
           <Link to={"/Projects"}>
-            <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
+            <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400">
               Projects
             </h2>
           </Link>
+          <a
+            href="https://drive.google.com/file/d/1q3mtUnQ8VXp4hxJ3afrNg4zVem9Gt1iT/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className="cursor-pointer text-2xl  hover:-translate-y-0.5 transition-all hover:text-blue-400 mr-5">
+              Resume
+            </h2>
+          </a>
         </div>
       </div>
     </nav>

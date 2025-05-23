@@ -13,7 +13,7 @@ export default function Footer() {
           Learning as I go, always open to feedback.
         </h1>
         <div className="group flex flex-row items-center h-4 m-2">
-          <FaEnvelope className="w-5 h-5 group-hover:text-blue-400 transition-all duration-300" />
+          <FaEnvelope className="w-5 cursor-pointer h-5 group-hover:text-blue-400 transition-all duration-300" />
           <h1
             className="ml-2 text-l group-hover:text-blue-400 transition-all duration-300 cursor-pointer"
             onClick={() =>
